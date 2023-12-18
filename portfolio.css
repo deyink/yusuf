@@ -16,8 +16,54 @@ html,body{
     padding-top: 20px ;
     padding-bottom: 20px;
     height: 100vh;
-    width: 100%;
+ 
+    
 }
+.desktop{
+    display: flex;
+
+
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    display: none;
+    right: 0px;
+    z-index: 999;
+    height: 100vh;
+    width: 250px;
+    background-color: grey;
+
+
+}
+
+@media(max-width:900px)
+{
+.hero{
+
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    height: 100vh;
+}
+
+.desktop{
+    display: none;
+}
+
+.sidebar{
+    display:none;
+}
+.sidebar img{
+    color: white;
+}
+
+
+
+}
+
 .logo{
     color: white;
     font-size: 32px;
@@ -118,10 +164,7 @@ h1{
     padding: 100px 0px;
     background-color: #191919;
 }
-.about img{
-    width: 430px;
-    height: auto;
-}
+
 .about-text{
     width: 550px;
 }
@@ -132,6 +175,10 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.main img{
+    height: 400px;
+    width: 450px
 }
 .about-text h2{
     color: white;
@@ -177,10 +224,16 @@ button:hover{
 .title h2{
 color: white;
 font-size: 75px;
-width: 100%;
-margin: 20px auto;
+margin: 30px auto;
 text-align: center;
 }
+@media(max-width:900px){
+    .title h2{
+        font-size: 35px;
+    
+    }
+}
+
 .box{
 display: flex;
 align-items: center;
@@ -241,7 +294,7 @@ h5{
     align-items: center;
     background: #191919;
 }
-.contact-me p {
+.contact-me p:nth-child(1) {
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -254,9 +307,14 @@ h5{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 9px 22px;
+    padding: 3px 9px;
     border-radius: 30px;
     transition: 0.4s ;
+}
+.contact-me .button-two p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 6px 12px;
 }
 .contact-me .button-two:hover{
     background: transparent;
@@ -315,6 +373,8 @@ footer p:nth-child(2){
 }
 @media(max-width:600px)
 {
+
+
 h1{
 font-size: 35px;
 }
@@ -325,14 +385,9 @@ h4{
     font-size: 15px;
 }
 .logo{
-    font-size: 15px;
+    font-size: 20px;
 }
-ul li{
-    padding: 5px;
-}
-ul li a{
-    font-size: 4px;
-}
+
 .btn{
     padding: 1px 5px;
     font-size: 8px;
@@ -341,9 +396,9 @@ ul li a{
 .newsletter form{
     width: 280px
 }
-.about img{
-    width:170px;
-    height: auto;
+.about .main img{
+    width:35%;
+    height:150px;
 }
 .about-text{
     width:130px
@@ -357,7 +412,7 @@ ul li a{
 .about-text h2{
     color: white;
     font-size: 10px;
-    margin-bottom: 10px;
+}
 .about-text h5{
     color: white;
     font-size: 6px;
@@ -383,6 +438,7 @@ ul li a{
     font-size: 3px ;
     padding: 7px 10px;
 }
+
 .box{
     display: flex;
     align-items: center;
